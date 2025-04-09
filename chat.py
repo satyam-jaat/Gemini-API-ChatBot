@@ -39,7 +39,7 @@ app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
 
 # Configure Gemini model
-poki.configure(api_key="AIzaSyD9xH034GyER34QNDV9t_r5t9SpXdtrj34")  # Replace with your actual API key
+poki.configure(api_key="key")  # Replace with your actual API key
 model = poki.GenerativeModel("models/gemini-1.5-pro-latest")
 
 @app.route('/chat', methods=['POST'])
